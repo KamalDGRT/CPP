@@ -1,0 +1,4 @@
+Open terminal in VScode using Ctrl + `
+
+
+g++ <filename>.cpp -o <filename> && <filename>

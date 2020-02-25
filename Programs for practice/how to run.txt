@@ -2,3 +2,5 @@ Open terminal in VScode using Ctrl + `
 
 
 g++ <filename>.cpp -o <filename> && <filename>
+
+This will create a .exe file with the <filename> given.

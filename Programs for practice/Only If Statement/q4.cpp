@@ -15,4 +15,4 @@ int main()
     if ( n < 0)
     cout << "\nThe etered number is  : " << n;
     return 0;
-}
+}   

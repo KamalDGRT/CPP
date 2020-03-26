@@ -1,0 +1,153 @@
+Minimum number of additions to cover all
+Send Feedback
+In a special batch of N students, which focuses on competitive programming. There are M teaching assistants and the N students are sitting in a linear arrangement of chairs. The chairs are numbered 1 to N, from left to right. The TAs are standing behind M distinct chairs. It is given that if a TA is standing behind chair numbered X, then TA can handle doubts of students on chairs numbered X-K to X+K.
+Going by this info, it is obvious that some students may enjoy support from more than one TA and there may be some students who have not been assigned to any TA.
+Your task is to find minimum number of TAs to be added, so that each student gets support of at least one TA.
+Input Format:
+The first line of input contains a single integer, that denotes the value of N (1 <= N <= 1000).
+The following line of input contains another integer, that denotes the value of M (1 <= M <= N).
+The following line of input contains another integer, that denotes the value of K (0 <= K <= N).
+Each of the following M lines contains an integer, that denotes the number of chair, behind which a particular TA is standing. These numbers represent the positions of TAs and are sorted in ascending order. The numbers will be distinct and will lie in the range: [1, N].
+Constraints:
+Time Limit: 1 second
+Output Format:
+Print the minimum number of TAs that needs to be added, as described in the task. 
+Sample Input 1:
+5
+2
+2
+1
+5
+Sample Output 1:
+0
+Explanation:
+As all the students are covered by present lot of TAs, therefore, no more TAs needs to be added.
+
+///
+
+
+Badminton Game
+Send Feedback
+Vikas and Navdeep are playing a modified badminton game. This badminton game is time bound and is of 48 minutes. Both of them are working hard to win the match. Naman is watching the game and has to answer these two queries:
+ 1. How many points were scored in first half?
+ 2. How many times a player came from a losing situation (has strictly fewer points scored than the other player) to a leading position one (has strictly more points scored than other player)?
+Since, Naman is busy watching the game, he wants your help.
+Input Format:
+The first line of input consists of number of points scored by Vikas in the entire game. Let it be denoted by symbol V (1 <= V <= 3000). Each of the following V lines consists of an integer, the seconds in which Vikas has scored points, ordered from smallest to largest. Each of second lies in the range: [1, 2880]. The following line consists of number of points scored by Navdeep. Let us denote it by symbol N (1 <= N <= 3000). Each of the following N lines consists of an integer, the seconds in which Navdeep has scored points, ordered from smallest to largest. Each of second lies in the range: [1, 2880].
+Constraints:
+Time Limit: 1 second
+Output Format:
+The first line of output contains an integer, which answers first query. The following line of output contains an integer, which answers second query.
+Sample Input 1:
+6
+15
+30
+35
+55
+60
+2065
+7
+20
+25
+40
+45
+50
+2070
+2075
+Sample Output 1:
+10
+5
+
+
+///
+
+Abhishek's homework
+Send Feedback
+Abhishek couldn't even finish half of the homework exercises in "Advanced topics in maths" class. The teacher is really upset and gives him one final problem to solve - if he can't solve it, he is gonna fail the course.
+Abhishek is a given a number N, he need to find no. of distinct perfect squares or perfect cubes from 1 to N ( both inclusive ).
+Abhishek wanted to ask the teacher about the definition of perfert square and perfect cube but he remembered that he had heard this term in last week's lesson just before falling asleep. Now his life is in your hands again!
+Note : If a number, like 729, which is both square ( 27^2 ) and cube (9^3) should be counted once only.
+Input Format:
+First line contains T no. of test cases
+The following line contains T space separated integers. Each integer represents the value of N. 
+Constraints
+1≤T≤1000
+1≤N≤1000000000000000
+Output Format:
+For every test case print count in new line
+Sample Input1:
+2
+67 10
+Sample Output1:
+10
+4
+Sample Input2:
+2
+100 425
+Sample Output2:
+12
+25
+Explanation:
+For sample input1:
+For Test #1, The numbers are 1,4,8,9,16,25,27,36,49,64
+For Test #2, The numbers are 1,4,8,9
+
+
+////
+
+
+Hungry Hackerman
+Send Feedback
+Hackerman is hungry programmer and has stumbled upon a local restaurant. The restaurant offers N meals and has an interesting pricing policy: each meal i has two assigned prices, Ai and Bi. hackerman pays A only for the first ordered meal, while B prices apply for all other meals.
+Hackerman can't decide how many meals to order. In order to make his decision easier, he has asked you to compute, for each k between 1 i N (inclusive), the minimum total price for k ordered meals. Hackerman doesn't care which particular meals he orders or in which order he orders them, however he won't order the same meal twice. Order, order, order.
+Input Format:
+The first line of input contains the positive integer N, the number of different meals offered by the restaurant.
+Each of the following N lines contains two positive integers, Ai and Bi, the prices for meal i as described above.
+Constraints:
+2 ≤ N ≤ 500000
+1 ≤ Ai,Bi ≤ 1000000000
+Output Format:
+Output must consist of N lines, where line k contains the minimum price for ordering exactly k different meals.
+Sample Input:
+3
+10 5
+9 3
+10 5
+Sample Output:
+9
+13
+18
+Explanation:
+k = 1: Hackerman pays A2 = 9 for the starting meal 2.
+k = 2: Hackerman pays A1 = 10 for the starting meal 1, then B2 = 3 for meal 2.
+
+
+/////
+
+
+Maximize Rs
+Send Feedback
+The CS & IT Department students have been facing tough competitions from each other since ages, in being the best in research & innovation.
+This time CS Department is taken the edge over IT Department by designing a special weather predictor device which inputs previous years data and perform analysis over it to give a prediction of current weather condition. This device needs a unique string code to be unlocked and activated, which is always kept safe with the Head Of Department's Computer.
+This unique string code consists only character 'R' and 'K'. This time task is given to you to extract the code using the given hint. CS Department gives you a string S consisting of characters 'R' and 'K' only. Now you are allowed to do exactly one move that is you have to choose two indices i and j (1<=i<=j<=|S| where |S| is string length ) and flip all the characters at position X where i<=X<=j. Flipping the character means :
+ if S[X]='R' :  //If character at position X is 'R' then change it to 'K'
+  S[X]='K'  
+ else :          //else if character at position X is 'K' then change it to 'R'
+  S[X]='R'
+Now your goal is that after exactly one move you have to obtain the maximum number of R's. So help department with maximum R's.
+Input Format:
+The first line contains the number of test cases T. Each test case contains a string S consisting of characters 'R' and 'K' only.
+Constraints:
+ 1<=T<=10 
+ 1<=|S| <=10^6 (length of string)
+Output Format:
+For each test case print the maximal number of R's that can be obtained after exactly one move.
+Sample Input:
+2
+KKRRRK
+RKRK
+Sample Output:
+5
+3
+Explanation:
+In first sample, flip the characters from 1 to 2(i=1,j=2).After flipping string becomes: RRRRRK. So, it contains five R's. There is no way to make the complete string equal to RRRRRR.
